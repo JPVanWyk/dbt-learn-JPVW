@@ -2,7 +2,7 @@ version: 2
 
 models:
   - name: customers
-    description: One record per customer
+    description: "{{doc('customers')}}"
     columns:
       - name: customer_id
         description: Primary key
@@ -32,4 +32,4 @@ models:
       - name: status
         tests:
           - accepted_values:
-              values: ['placed', 'shipped', 'completed', 'return_pending', 'returned']
+              values: ['placed','shipped', 'completed', 'return_pending', 'returned']
